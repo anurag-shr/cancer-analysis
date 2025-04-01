@@ -80,7 +80,7 @@ Here are some of the visual insights created in the notebook:
 
 ## 👤 About Me
 
-I'm Anurag — a data enthusiast with a background in **Microbiology & Genetics**, currently transitioning into **Bioinformatics** and **Healthcare Analytics**.  
+I'm Anurag — a data enthusiast with a background in **Genetics & Microbiology**, currently transitioning into **Bioinformatics** and **Healthcare Analytics**.  
 I'm passionate about using **data for social good** and love solving real-world problems at the intersection of biology and technology.
 
 Connect with me on [LinkedIn](www.linkedin.com/in/anurag-shr) or drop a message if you'd like to collaborate!
