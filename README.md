@@ -1,79 +1,110 @@
-# Data Project Template
+# 🧬 Cancer Diagnosis: Exploratory Data Analysis using Python
 
-<a target="_blank" href="https://datalumina.com/">
-    <img src="https://img.shields.io/badge/Datalumina-Project%20Template-2856f7" alt="Datalumina Project" />
-</a>
+> An exploratory data analysis (EDA) project to uncover how tumor size and treatment types impact survival outcomes in cancer patients.
 
-## Cookiecutter Data Science
-This project template is a simplified version of the [Cookiecutter Data Science](https://cookiecutter-data-science.drivendata.org) template, created to suit the needs of Datalumina and made available as a GitHub template.
+---
 
-## Adjusting .gitignore
+## 📌 Project Overview
 
-Ensure you adjust the `.gitignore` file according to your project needs. For example, since this is a template, the `/data/` folder is commented out and data will not be exlucded from source control:
+This project dives into a synthetic cancer diagnosis dataset to analyze patient demographics, tumor characteristics, and treatment outcomes. The aim is to extract insights that could guide early diagnosis and inform better treatment strategies.
 
-```plaintext
-# exclude data from source control by default
-# /data/
-```
+I created this project to sharpen my Python data analytics skills while exploring real-world healthcare problems—merging my interests in **Bioinformatics**, **HealthTech**, and **Data for Good**.
 
-Typically, you want to exclude this folder if it contains either sensitive data that you do not want to add to version control or large files.
+---
 
-## Duplicating the .env File
-To set up your environment variables, you need to duplicate the `.env.example` file and rename it to `.env`. You can do this manually or using the following terminal command:
+## 🧠 Key Questions Explored
 
-```bash
-cp .env.example .env # Linux, macOS, Git Bash, WSL
-copy .env.example .env # Windows Command Prompt
-```
+- Do larger tumor sizes correlate with lower survival rates?
+- How do different treatments influence patient outcomes?
+- Is there a link between biopsy results and survival?
+- What patterns exist across age, gender, and tumor types?    
 
-This command creates a copy of `.env.example` and names it `.env`, allowing you to configure your environment variables specific to your setup.
+---
 
+## 📊 Dataset Features
+The dataset was acquired from Kaggle for exploration
 
-## Project Organization
+The dataset includes the following columns:
 
-```
-├── LICENSE            <- Open-source license if one is chosen
-├── README.md          <- The top-level README for developers using this project
-├── data
-│   ├── external       <- Data from third party sources
-│   ├── interim        <- Intermediate data that has been transformed
-│   ├── processed      <- The final, canonical data sets for modeling
-│   └── raw            <- The original, immutable data dump
-│
-├── models             <- Trained and serialized models, model predictions, or model summaries
-│
-├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-│                         the creator's initials, and a short `-` delimited description, e.g.
-│                         `1.0-jqp-initial-data-exploration`
-│
-├── references         <- Data dictionaries, manuals, and all other explanatory materials
-│
-├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-│   └── figures        <- Generated graphics and figures to be used in reporting
-│
-├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-│                         generated with `pip freeze > requirements.txt`
-│
-└── src                         <- Source code for this project
-    │
-    ├── __init__.py             <- Makes src a Python module
-    │
-    ├── config.py               <- Store useful variables and configuration
-    │
-    ├── dataset.py              <- Scripts to download or generate data
-    │
-    ├── features.py             <- Code to create features for modeling
-    │
-    │    
-    ├── modeling                
-    │   ├── __init__.py 
-    │   ├── predict.py          <- Code to run model inference with trained models          
-    │   └── train.py            <- Code to train models
-    │
-    ├── plots.py                <- Code to create visualizations 
-    │
-    └── services                <- Service classes to connect with external platforms, tools, or APIs
-        └── __init__.py 
-```
+- `Patient_ID`
+- `Age`
+- `Gender`
+- `Tumor_Size(cm)`
+- `Tumor_Type`
+- `Biopsy_Result` (Benign / Malignant)
+- `Treatment` (Chemotherapy, Radiation, Surgery, etc.)
+- `Response_to_Treatment`
+- `Survival_Status` (Survived / Not Survived)
 
---------
+*(Note: This is a synthetic dataset used for educational purposes.)*
+
+---
+
+## 🧪 Tools & Libraries Used
+
+- Python 🐍
+- Jupyter Notebook 📓
+- Pandas & NumPy 🧮
+- Matplotlib & Seaborn 📊
+- Sikit-Learn
+
+---
+
+## 🔍 Key Insights
+
+- Tumor size tends to be larger in patients who did not survive.
+- Chemotherapy showed a better survival response.
+- There was no evident relationship seen between Age, Tumor Size, and Survival.
+- Younger patients had lower incidence compared to Older patients.
+
+---
+
+## 📈 Sample Visualizations
+
+Here are some of the visual insights created in the notebook:
+
+- Tumor Size vs. Survival Status
+- Treatment Type vs. Response to Treatment
+- Gender-wise Tumor Type Distribution
+- Correlation heatmaps for numeric features
+
+---
+
+## ✅ Next Steps
+
+- 🔮 Add a simple predictive model for survival status
+- 📦 Deploy as an interactive dashboard using Streamlit
+- 🧠 Write a blog breaking down the analysis (coming soon!)
+
+---
+
+## 👤 About Me
+
+I'm Anurag — a data enthusiast with a background in **Microbiology & Genetics**, currently transitioning into **Bioinformatics** and **Healthcare Analytics**.  
+I'm passionate about using **data for social good** and love solving real-world problems at the intersection of biology and technology.
+
+Connect with me on [LinkedIn](www.linkedin.com/in/anurag-shr) or drop a message if you'd like to collaborate!
+
+---
+
+## 📂 How to Run
+
+1. Clone the repo:  
+   `git clone https://github.com/yourusername/cancer-diagnosis-eda.git`
+
+2. Navigate to the folder:  
+   `cd cancer-diagnosis-eda`
+
+3. Install required libraries:  
+   `pip install -r requirements.txt`
+
+4. Run the notebook:  
+   Open `cancer_diagnosis_EDA.ipynb` in Jupyter or VSCode.
+
+---
+
+## 📄 License
+
+This project is open for learning and collaboration. Feel free to fork and build upon it!
+
+---
